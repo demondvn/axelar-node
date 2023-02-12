@@ -44,7 +44,7 @@ mkdir -p "$HOME/$CHAIN_HOME/"{.vald,.tofnd,bin,logs}
 # cd axelar-core || return
 # git checkout "$AXELARD_BINARY_VERSION"
 # make build
-# cp bin/axelard "$HOME/$CHAIN_HOME/bin/axelard"
+cp axelar-core/bin/axelard "$HOME/$CHAIN_HOME/bin/axelard"
 
 # download tofnd binary
 curl "https://axelar-releases.s3.us-east-2.amazonaws.com/tofnd/$TOFND_VERSION/tofnd-linux-amd64-$TOFND_VERSION" > "$HOME/$CHAIN_HOME/bin/tofnd"
