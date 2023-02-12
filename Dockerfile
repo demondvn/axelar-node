@@ -7,4 +7,5 @@ WORKDIR /axelar
 RUN git clone https://github.com/axelarnetwork/axelar-core.git && cd axelar-core && git checkout "$AXELARD_BINARY_VERSION" && make build 
 COPY script.sh script.sh
 RUN chmod +x script.sh
+RUN apt install jq tar lz4 -y
 CMD ./axelard start --home "$HOME/$CHAIN_HOME" --moniker "$NODE_MONIKER" || sleep infinity
