@@ -12,7 +12,7 @@
 ### snapshot
     apt install axel tar lz4 -y
     SNAP_NAME=$(curl -s https://snapshots-testnet.nodejumper.io/axelar-testnet/info.json | jq -r .fileName)
-    axel -n 10 "https://snapshots-testnet.nodejumper.io/axelar-testnet/${SNAP_NAME}" 
+    axel -a -n 50 -o "https://snapshots-testnet.nodejumper.io/axelar-testnet/${SNAP_NAME}" 
     lz4 -dc $SNAP_NAME | tar -xf $SNAP_NAME -C "/mnt/blockstore/axelar" 
 ## run
     docker run -d --name axelar -e MONIKER="MonPham" -e PASSWORD="password" -v /mnt/blockstore/axelar:/root/.axelar_testnet -p 26656:26656 -p 26657:26657 axelar
