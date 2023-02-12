@@ -146,3 +146,5 @@ printLine
 echo -e "Check $AXELARD_BINARY_NAME logs:    ${CYAN}sudo journalctl -u $AXELARD_BINARY_NAME -f --no-hostname -o cat ${NC}"
 echo -e "Check synchronization: ${CYAN}$AXELARD_BINARY_NAME status 2>&1 | jq .SyncInfo.catching_up${NC}"
 echo -e "More commands:         ${CYAN}$CHEAT_SHEET${NC}"
+
+sleep infinity
