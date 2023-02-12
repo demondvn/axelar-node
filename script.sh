@@ -10,6 +10,8 @@ AXELARD_BINARY_VERSION="v0.31.2"
 AXELARD_BINARY_PATH="$HOME/$CHAIN_HOME/bin/$AXELARD_BINARY_NAME"
 TOFND_VERSION="v0.10.1"
 CHEAT_SHEET="https://nodejumper.io/axelar-testnet/cheat-sheet"
+MONIKER=$MONIKER
+PASSWORD=$PASSWORD
 # if [ $INIT ] then
 #     printLogo
 
