@@ -131,8 +131,8 @@ screen -Smd val /usr/bin/sh -c 'echo "$KEYRING_PASSWORD" | $AXELARD_BINARY_PATH 
 # download fresh snapshot
 axelard tendermint unsafe-reset-all --home "$HOME/$CHAIN_HOME"
 
-SNAP_NAME=$(curl -s https://snapshots-testnet.nodejumper.io/axelar-testnet/info.json | jq -r .fileName)
-curl "https://snapshots-testnet.nodejumper.io/axelar-testnet/${SNAP_NAME}" | lz4 -dc - | tar -xf - -C "$HOME/.axelar_testnet"
+# SNAP_NAME=$(curl -s https://snapshots-testnet.nodejumper.io/axelar-testnet/info.json | jq -r .fileName)
+# curl "https://snapshots-testnet.nodejumper.io/axelar-testnet/${SNAP_NAME}" | lz4 -dc - | tar -xf - -C "$HOME/.axelar_testnet"
 
 # sudo systemctl daemon-reload
 # sudo systemctl enable axelard
