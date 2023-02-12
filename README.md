@@ -1,7 +1,7 @@
 # axelar-node
 
 ### build
-    docker build . -t axelar_tmp
+    docker build . -t axelar
   
 <!-- ## Init run only first time
 ### setup
