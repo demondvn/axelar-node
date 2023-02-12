@@ -10,4 +10,4 @@ RUN apt update && apt install -y curl wget gcc g++ make git screen
 WORKDIR /axelar
 COPY script.sh script.sh
 RUN chmod +x script.sh
-CMD ./axelard/axelard start --home "$HOME/$CHAIN_HOME" --moniker "$NODE_MONIKER" || sleep infinity
+CMD ./axelar/axelard start --home "$HOME/$CHAIN_HOME" --moniker "$NODE_MONIKER" || sleep infinity
