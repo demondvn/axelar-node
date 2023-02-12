@@ -38,13 +38,13 @@ printCyan "4. Building binaries..." && sleep 1
 mkdir -p "$HOME/$CHAIN_HOME/"{.vald,.tofnd,bin,logs}
 
 # build axelard binary
-cd || return
-rm -rf axelar-core
-git clone https://github.com/axelarnetwork/axelar-core.git
-cd axelar-core || return
-git checkout "$AXELARD_BINARY_VERSION"
-make build
-cp bin/axelard "$HOME/$CHAIN_HOME/bin/axelard"
+# cd || return
+# rm -rf axelar-core
+# git clone https://github.com/axelarnetwork/axelar-core.git
+# cd axelar-core || return
+# git checkout "$AXELARD_BINARY_VERSION"
+# make build
+# cp bin/axelard "$HOME/$CHAIN_HOME/bin/axelard"
 
 # download tofnd binary
 curl "https://axelar-releases.s3.us-east-2.amazonaws.com/tofnd/$TOFND_VERSION/tofnd-linux-amd64-$TOFND_VERSION" > "$HOME/$CHAIN_HOME/bin/tofnd"
