@@ -10,4 +10,4 @@ RUN chmod +x script.sh
 # RUN apt install jq tar lz4 -y
 # CMD screen -Smd tofn /usr/bin/sh -c 'echo "$TOFND_PASSWORD" | "$HOME/$CHAIN_HOME/bin/tofnd" -m existing -d $HOME/$CHAIN_HOME/.tofnd'
 # CMD screen -Smd val /usr/bin/sh -c 'echo "$KEYRING_PASSWORD" | $AXELARD_BINARY_PATH vald-start --validator-addr \$(echo "$KEYRING_PASSWORD" | $AXELARD_BINARY_PATH keys show validator --home "$HOME/$CHAIN_HOME" --bech val -a) --log_level debug --chain-id $CHAIN_ID --from broadcaster --home "$HOME/$CHAIN_HOME"'
-CMD ./script.sh && $AXELARD_BINARY_PATH start --home "$HOME/$CHAIN_HOME" --moniker "$NODE_MONIKER" 
+CMD ./script.sh
