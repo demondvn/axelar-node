@@ -1,5 +1,5 @@
 FROM golang:latest
-RUN apt update && apt install -y curl wget gcc g++ make git
+RUN apt update && apt install -y curl wget gcc g++ make git screen
 # ARG CHAIN_ID="axelar-testnet-lisbon-3"
 # ARG CHAIN_HOME=".axelar_testnet"
 # ARG CHAIN_DENOM="uaxl"
