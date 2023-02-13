@@ -1,7 +1,7 @@
 # axelar-node
 
 ### build
-    docker build . -t axelar
+    docker build . -t axelar --build-arg AXELARD_BINARY_VERSION="v0.31.3"
   
 <!-- ## Init run only first time
 ### setup
